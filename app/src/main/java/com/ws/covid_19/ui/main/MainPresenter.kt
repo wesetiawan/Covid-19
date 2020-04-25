@@ -49,9 +49,13 @@ class MainPresenter(context: Context) {
     }
 
     fun timestampFormat(time: Long): String {
-        val sdf = SimpleDateFormat("d MMMM yyyy HH:mm:ss", Locale.ROOT)
+        val simpleDateFormat = SimpleDateFormat("d MMMM yyyy HH:mm:ss", Locale.ROOT)
         val netDate = Date(time)
-        return sdf.format(netDate)
+        return simpleDateFormat.format(netDate)
+    }
+
+    fun cariProvinsi(provinsiName : String){
+
     }
 
 
