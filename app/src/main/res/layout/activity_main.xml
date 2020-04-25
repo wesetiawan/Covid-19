@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <androidx.appcompat.widget.SearchView
+                app:queryBackground="@android:color/transparent"
+                android:paddingStart="-13dp"
+                android:paddingEnd="0dp"
+                android:id="@+id/sv_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="0.8"
+                android:accessibilityLiveRegion="none"
+                android:background="@drawable/outline_field_bg"
+                android:inputType="text"
+                app:iconifiedByDefault="false"
+                app:queryHint="search here...." />
+
+            <ImageView
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_account_circle"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="1"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/tl_tr_rounder_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <TextView
+                    android:id="@+id/tv_country"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_lastUpdate"
+                    android:textAlignment="viewEnd"
+                    android:layout_weight="0.9"
+                    android:layout_gravity="end"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bl_bt_rounded_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/happy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="@string/total_sembuh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_total_sembuh"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/sad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="@string/total_positif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_total_positif"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/cry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="@string/total_meninggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_total_meninggal"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+</LinearLayout>

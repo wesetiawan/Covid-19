@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-confing>
+    <domain-config cleartextTrafficPermited = "true">
+        <domain includeSubDomains="true">api.kawalcorona.com</domain>
+    </domain-config>
+</network-security-confing>
